@@ -1,16 +1,23 @@
 package calculator;
 
+import command_parser.CommandParser;
+import commands.Command;
+import creator.Creator;
+
 import java.util.Hashtable;
 
 public class Calculator {
-    private String[] start_params_;
-    private String[] commands_list_;
+    private String start_params_file_;
+    CommandParser commands_list_;
     private Hashtable<String, Double> define_params_;
-    public Calculator(String[] start_params) {
-        start_params_ = start_params;
+    public Calculator(String[] start_params_file) throws Exception {
+        start_params_file_ = start_params_file[0];
+        commands_list_ = new CommandParser(start_params_file_);
     }
-    void run() {
-        if (start_params_.length == 0) {
+    void run() throws Exception {
+        for (int i = 0; i != commands_list_.getCommands().length; ++i) {
+            Creator creator = new Creator();
+            Command command = creator.create(commands_list_.getCommands()[i]);
 
         }
     }

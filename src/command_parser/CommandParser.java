@@ -10,9 +10,13 @@ public class CommandParser {
         BufferedReader reader = new BufferedReader(new FileReader(file_path));
         String line = reader.readLine();
         while (line != null) {
-            System.out.println(line);
+            CommandLine command_line = new CommandLine(line);
+            command_line.print();
             line = reader.readLine();
         }
         reader.close();
+    }
+    public String[] getCommands() {
+        return commands_list_;
     }
 }
