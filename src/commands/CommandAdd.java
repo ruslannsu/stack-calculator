@@ -4,8 +4,9 @@ import java.util.Stack;
 
 public class CommandAdd extends Command {
     @Override
-    void execute(Stack <Integer> st) {
+    public void execute(Stack <Integer> st) {
         int res = st.pop() + st.pop();
         st.push(res);
+        System.out.println("this is add command");
     }
 }
