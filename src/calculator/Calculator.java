@@ -15,10 +15,6 @@ public class Calculator {
         commands_list_ = new CommandParser(start_params_file_);
     }
     void run() throws Exception {
-        for (int i = 0; i != commands_list_.getCommands().length; ++i) {
-            Creator creator = new Creator();
-            Command command = creator.create(commands_list_.getCommands()[i]);
 
-        }
     }
 }
