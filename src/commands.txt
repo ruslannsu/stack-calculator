@@ -1,3 +1,4 @@
-create s2 tw
-what 2423
-&&&1 111
+push 228.0
+push 1337.0
+add
+print

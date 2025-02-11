@@ -13,7 +13,6 @@ public class CommandParser {
         String line = reader.readLine();
         while (line != null) {
             CommandLine command_line = new CommandLine(line);
-            command_line.print();
             command_lines_.add(command_line);
             line = reader.readLine();
         }
