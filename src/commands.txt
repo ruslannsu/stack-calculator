@@ -1,4 +1,3 @@
 push 228.0
-push 1337.0
 add
 print

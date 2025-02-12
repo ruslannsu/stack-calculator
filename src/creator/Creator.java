@@ -14,5 +14,4 @@ public class Creator {
     public Command create(String command) throws Exception {
         return (Command) Class.forName(properties_.getProperty(command)).getDeclaredConstructor().newInstance();
     }
-
 }
