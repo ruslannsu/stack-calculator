@@ -1,8 +1,6 @@
 package command_parser;
 
 import command_parser.exceptions.CommandIsEmpty;
-import command_parser.exceptions.CommandNameNotFound;
-
 import java.util.ArrayList;
 
 public class CommandLine {
@@ -18,7 +16,6 @@ public class CommandLine {
         for (int i = 0; i != file_line.length(); ++i) {
             if ((i == file_line.length() - 1) && (!got_name)) {
                 command_name_ = file_line.substring(0, i + 1);
-                System.out.println("there");
                 command_params_.add("no params");
                 break;
             }

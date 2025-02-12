@@ -2,7 +2,6 @@ package commands;
 
 import command_parser.exceptions.BadCountArgs;
 import commands.exceptions.IncorrectConfigLogic;
-
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Stack;
