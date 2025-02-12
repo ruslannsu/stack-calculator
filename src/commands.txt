@@ -1,3 +1,7 @@
 push 228.0
+push 1337.0
+add
+print 3
+push 5
 add
 print
