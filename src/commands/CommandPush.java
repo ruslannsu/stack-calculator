@@ -7,7 +7,8 @@ import java.util.Stack;
 
 public class CommandPush extends Command {
     @Override
-    public void execute(Stack<Double> st, ArrayList<String> params) {
+    public void execute(Environment env, ArrayList<String> params) {
+        Stack<Double> st = env.getStack();
         if (params.size() != 1) {
             throw new BadCountArgs();
         }

@@ -8,7 +8,8 @@ import java.util.Stack;
 
 public class CommandDiv extends Command {
     @Override
-    public void execute(Stack<Double> st, ArrayList<String> params) {
+    public void execute(Environment env, ArrayList<String> params) {
+        Stack<Double> st = env.getStack();
         if (!Objects.equals(params.getFirst(), "no params")) {
             throw new BadCountArgs();
         }

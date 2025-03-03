@@ -1,7 +1,6 @@
-push 228.0
-push 1337.0
-add
-print
-push 5
-add
+def b 228
+def c 456
+push b
+push c
+div
 print
